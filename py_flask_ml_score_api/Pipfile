@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+numpy = "*"
+pillow = "*"
+tensorflow = "*"
+
+[requires]
+python_version = "3.6"

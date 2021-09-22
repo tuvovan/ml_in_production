@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  api:
+    container_name: app # Name can be anything
+    restart: always
+    build: ./app
+    expose:
+      - 5000
+
+  server_nginx:
+    container_name: server_nginx
+    restart: always
+    build: ./nginx
+    ports:
+      - "80:80"
